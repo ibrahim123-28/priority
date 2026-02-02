@@ -1,65 +1,120 @@
-import Image from "next/image";
-
+"use client";
+import Navbar from "@/components/ui/Navbar";
+import Hero from "@/components/Hero"; // The new component with WhatsApp & Stats
+import WorkSection from "@/components/WorkSection";
+import ProcessSection from "@/components/ProcessSection";
+import ContactSection from "@/components/ContactSection";
+import ResultsSection from "@/components/ResultsSection"; // The new 300%+ Results section
+import ProjectEstimator from "@/components/ProjectEstimator"; // Kept your estimator
+import { motion } from "framer-motion";
+import { Code2, Cpu, Globe, LayoutTemplate, Rocket, MapPin, Zap } from "lucide-react";
+import FloatingChat from "@/components/FloatingChat";
 export default function Home() {
+  // Services Data (Styled for the Neon Theme)
+  const services = [
+    { title: "High-Converting Websites", icon: <LayoutTemplate />, desc: "Websites that turn visitors into customers with sub-3s load times." },
+    { title: "Local SEO & Google Maps", icon: <MapPin />, desc: "Dominate your local market and rank #1 on search results." },
+    { title: "AI Lead Capture", icon: <Cpu />, desc: "24/7 lead generation on autopilot with intelligent chatbots." },
+    { title: "Growth Retainers", icon: <Rocket />, desc: "Continuous optimization and scaling for long-term success." },
+  ];
+
+  // Team Data
+  const team = [
+    { name: "Ibrahim", role: "Lead Architect", bio: "Full-stack specialist & AI Engineer." },
+    { name: "Austin", role: "Strategic Director", bio: "Brand strategy & digital growth." },
+    { name: "Savion", role: "Creative Director", bio: "UI/UX & visual identity expert." },
+  ];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen relative overflow-hidden bg-[#020024]">
+      <Navbar />
+
+      {/* 1. HERO SECTION (Video Match: WhatsApp + Stats Bar) */}
+      <Hero />
+
+      {/* 2. SERVICES SECTION */}
+      <section id="services" className="py-24 px-6 relative">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4 text-white">
+              Growth Solutions That <span className="text-[#00D4FF]">Deliver</span>
+            </h2>
+            <p className="text-gray-400">Clear, productized offers with transparent outcomes.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.map((service, idx) => (
+              <motion.div
+                key={idx}
+                whileHover={{ y: -10 }}
+                className="glass-panel p-8 rounded-2xl group border border-white/5"
+              >
+                <div className="mb-6 p-4 bg-white/5 rounded-xl w-fit text-[#00D4FF] group-hover:text-white group-hover:bg-[#00D4FF] transition-colors shadow-lg">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-white">{service.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{service.desc}</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* 3. PROCESS SECTION */}
+      <ProcessSection />
+
+      {/* 4. RESULTS SECTION (Video Match: Big Metrics) */}
+      <ResultsSection />
+
+      {/* 5. WORK SECTION */}
+      <WorkSection />
+
+      {/* 6. TEAM SECTION (Kept per your request) */}
+      <section id="team" className="py-24 px-6 relative overflow-hidden">
+        {/* Background Glow */}
+        <div className="absolute right-0 top-1/4 w-[400px] h-[400px] bg-[#00D4FF]/10 blur-[100px] rounded-full z-0" />
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4 text-white">The Leadership</h2>
+            <p className="text-gray-400">Meet the minds behind the machine.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {team.map((member, i) => (
+              <motion.div 
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.2 }}
+                className="glass-panel p-8 rounded-3xl text-center border border-white/5 hover:border-[#00D4FF]/50 transition-colors"
+              >
+                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-gray-800 to-black rounded-full mb-6 flex items-center justify-center border-2 border-white/10 shadow-xl text-[#00D4FF]">
+                  <span className="text-2xl font-bold">{member.name[0]}</span>
+                </div>
+                <h3 className="text-2xl font-heading font-bold mb-1 text-white">{member.name}</h3>
+                <p className="text-[#00D4FF] text-sm font-medium mb-4">{member.role}</p>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {member.bio}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* 7. ESTIMATOR */}
+      <ProjectEstimator />
+
+      {/* 8. CONTACT */}
+      <ContactSection />
+
+      {/* FOOTER */}
+      <footer className="py-12 border-t border-white/10 bg-[#020024] text-center">
+        <h2 className="font-heading text-2xl font-bold text-white mb-6">ASCEND<span className="text-[#00D4FF]">.</span></h2>
+        <p className="text-gray-500 text-sm">© {new Date().getFullYear()} ASCEND Agency.</p>
+      </footer>
+      <FloatingChat />
+    </main>
   );
 }

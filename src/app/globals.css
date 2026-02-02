@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
+
+
+@tailwind utilities;
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #020024;
+  --foreground: #ffffff;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  /* The "Neon Dusk" Ambient Background */
+  background: radial-gradient(circle at 50% 0%, #0a0a55 0%, #020024 50%, #010014 100%);
+}
+
+/* === PREMIUM FROSTED GLASS (Matches Video) === */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03); /* Extremely subtle */
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
+
+.glass-panel:hover {
+  border-color: #00D4FF; /* Cyan glow on hover */
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.15); 
+}
+
+/* === TYPOGRAPHY === */
+.text-neon {
+  color: #00D4FF;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #ffffff, #00D4FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
