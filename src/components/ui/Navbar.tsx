@@ -16,7 +16,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Services", href: "/#services" },
-    { name: "Work", href: "/#work" },
+    { name: "Work", href: "/case-studies" },
     { name: "Process", href: "/#process" },
     { name: "Team", href: "/#team" },
   ];
@@ -44,18 +44,10 @@ export default function Navbar() {
             </Link>
           ))}
 
-          {/* 1. PRICING LINK (Now sits with the other links) */}
-          <Link 
-            href="/pricing" 
-            className="text-sm font-medium text-gray-300 hover:text-[#00D4FF] transition-colors"
-          >
-            Pricing
-          </Link>
-
-          {/* 2. START PROJECT BUTTON (Now on the far right) */}
-          <Link href="/#contact">
+          {/* The "Start Project" button now links to the Calendar */}
+          <Link href="/book">
             <button className="px-6 py-2.5 rounded-full bg-[#00D4FF] text-black font-bold text-sm hover:scale-105 transition-transform shadow-[0_0_20px_-5px_rgba(0,212,255,0.5)]">
-              Start Project
+              Book a Call
             </button>
           </Link>
         </div>
@@ -85,16 +77,9 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Link 
-              href="/pricing"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-lg font-medium text-[#00D4FF]"
-            >
-              Pricing
-            </Link>
-            <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>
+            <Link href="/book" onClick={() => setMobileMenuOpen(false)}>
               <button className="w-full py-3 mt-2 rounded-xl bg-[#00D4FF] text-black font-bold">
-                Start Project
+                Book Strategy Call
               </button>
             </Link>
           </motion.div>

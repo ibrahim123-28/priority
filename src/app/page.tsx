@@ -4,14 +4,14 @@ import Navbar from "@/components/ui/Navbar";
 import Hero from "@/components/Hero"; 
 import WorkSection from "@/components/WorkSection";
 import ProcessSection from "@/components/ProcessSection";
-import ContactSection from "@/components/ContactSection";
+import BookingSection from "@/components/BookingSection"; // IMPORT THE NEW BOOKING SECTION
 import ResultsSection from "@/components/ResultsSection";
 import FloatingChat from "@/components/FloatingChat";
 import { motion } from "framer-motion";
 import { Cpu, LayoutTemplate, Rocket, MapPin } from "lucide-react";
-
+import Footer from "@/components/ui/Footer";
 export default function Home() {
-  // Services Data (Styled for the Neon Theme)
+  // Services Data
   const services = [
     { 
       title: "High-Converting Websites", 
@@ -49,8 +49,6 @@ export default function Home() {
       {/* 1. HERO SECTION */}
       <Hero />
       
-      {/* Note: Calculator removed from here because it is now on the /pricing page */}
-
       {/* 2. SERVICES SECTION */}
       <section id="services" className="py-24 px-6 relative">
         <div className="max-w-7xl mx-auto">
@@ -82,11 +80,8 @@ export default function Home() {
       {/* 3. PROCESS SECTION */}
       <ProcessSection />
 
-      {/* 4. RESULTS SECTION */}
-      <ResultsSection />
 
-      {/* 5. WORK SECTION */}
-      <WorkSection />
+      
 
       {/* 6. TEAM SECTION */}
       <section id="team" className="py-24 px-6 relative overflow-hidden">
@@ -122,14 +117,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. CONTACT SECTION */}
-      <ContactSection />
+      {/* 7. BOOKING SECTION (Replaces ContactSection) */}
+      <BookingSection />
 
       {/* FOOTER */}
-      <footer className="py-12 border-t border-white/10 bg-[#020024] text-center relative z-10">
-        <h2 className="font-heading text-2xl font-bold text-white mb-6">ASCEND<span className="text-[#00D4FF]">.</span></h2>
-        <p className="text-gray-500 text-sm">© {new Date().getFullYear()} ASCEND Agency.</p>
-      </footer>
+      <Footer />
       
       <FloatingChat />
     </main>
