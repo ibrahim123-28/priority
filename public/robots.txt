@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://scalvora.vercel.app
+
+# Sitemaps
+Sitemap: https://scalvora.vercel.app/sitemap.xml
