@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Head from "next/head"; // ✅ Import Head
 import Navbar from "@/components/ui/Navbar";
 import Hero from "@/components/Hero"; 
 import WorkSection from "@/components/WorkSection";
@@ -37,13 +38,19 @@ export default function Home() {
 
   // Team Data
   const team = [
-    { name: "Ibrahim", role: "Lead Architect", bio: "Full-stack specialist & AI Engineer." },
-    { name: "Austin", role: "Strategic Director", bio: "Brand strategy & digital growth." },
-    { name: "Savion", role: "Creative Director", bio: "UI/UX & visual identity expert." },
+    { name: "Ibrahim", role: "Tech Head", bio: "" },
+    { name: "Austin", role: "CO-Founder", bio: "" },
+    { name: "Savion", role: "Founder", bio: "" },
   ];
 
   return (
     <main className="min-h-screen relative overflow-hidden bg-[#020024]">
+
+       <Head>
+        <meta name="google09423bc5c9bb9cbd.html" content="WQnTG9Q2e0fui-4A9ZdeVtYlfMyXAVGqfbPdYHsA9bE" />
+      </Head>
+
+
       <Navbar />
 
       {/* 1. HERO SECTION */}

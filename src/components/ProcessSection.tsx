@@ -5,32 +5,32 @@ import { Search, Map, Palette, Code, Rocket } from "lucide-react";
 const steps = [
   {
     id: 1,
-    title: "Discovery",
-    desc: "We dive deep into your brand, audience, and goals. We don't just take orders; we challenge assumptions to find the best path forward.",
+    title: "Discovery & Consultation",
+    desc: "We start with a personalized consultation to understand your goals, challenges, and vision. This ensures we design solutions tailored to your business, not generic templates.",
     icon: <Search className="w-6 h-6" />,
   },
   {
     id: 2,
-    title: "Strategy & Architecture",
-    desc: "We blueprint the technical solution. Choosing the right stack (MERN, Next.js, Python AI) to ensure scalability and speed.",
+    title: "Strategy & Blueprint",
+    desc: "We craft a clear, actionable roadmap—covering web, SEO, and digital marketing. You’ll see exactly how we’ll take you from where you are to where you want to be.",
     icon: <Map className="w-6 h-6" />,
   },
   {
     id: 3,
-    title: "UI/UX Design",
-    desc: "We craft high-fidelity prototypes. Every pixel is designed for conversion, using glassmorphism and modern aesthetics.",
+    title: "Design & Development",
+    desc: "Our team builds branded, emotionally engaging digital assets (websites, dashboards, campaigns). Every detail is polished for trust, conversion, and long-term impact.",
     icon: <Palette className="w-6 h-6" />,
   },
   {
     id: 4,
-    title: "Development",
-    desc: "The heavy lifting. We write clean, type-safe code. Integrating AI agents, databases, and responsive front-ends.",
+    title: "Launch & Optimization",
+    desc: "We roll out your project with precision, ensuring smooth execution. Early results are tracked, and we fine-tune for maximum performance.",
     icon: <Code className="w-6 h-6" />,
   },
   {
     id: 5,
-    title: "Launch & Scale",
-    desc: "Deployment to elite infrastructure (Vercel/AWS). We monitor performance and iterate based on real user data.",
+    title: "Growth Partnership",
+    desc: "Beyond launch, we stay invested in your success. Ongoing support, analytics, and consultative guidance keep your business scaling.",
     icon: <Rocket className="w-6 h-6" />,
   },
 ];

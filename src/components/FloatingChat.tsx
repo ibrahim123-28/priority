@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function FloatingChat() {
   return (
     <motion.a
-      href="https://wa.me/9326731115" // REPLACE WITH YOUR NUMBER
+      href="https://wa.me/9136663411" // REPLACE WITH YOUR NUMBER
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, scale: 0.8 }}

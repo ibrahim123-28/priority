@@ -22,10 +22,10 @@ export default function BookingSection() {
     setStatus("submitting");
 
     // REPLACE WITH YOUR ACTUAL FORMSPREE ID
-    const formspreeId = "https://formspree.io/f/mykjvqqw"; 
+    const formspreeId = "https://formspree.io/f/mlglpwkp"; 
 
     // 1. Send Data to Formspree
-    const response = await fetch(`https://formspree.io/f/mykjvqqw`, {
+    const response = await fetch(`https://formspree.io/f/mlglpwkp`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ subject: "New Audit Request (Homepage)", ...formData }),
@@ -69,9 +69,9 @@ export default function BookingSection() {
           {/* Contact Info Side */}
           <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} className="lg:col-span-2 space-y-8">
             <div className="space-y-6">
-              <InfoItem icon={<Mail />} title="Email" content="hello@ascend.agency" />
-              <InfoItem icon={<Phone />} title="Phone" content="+1 (555) 123-4567" />
-              <InfoItem icon={<MapPin />} title="Location" content="San Francisco • Dubai • Remote" />
+              <InfoItem icon={<Mail />} title="Email" content="digiascend13@gmail.com" />
+              <InfoItem icon={<Phone />} title="Phone" content="+91 9136663411" />
+              <InfoItem icon={<MapPin />} title="Location" content="Mumbai • Remote" />
               <InfoItem icon={<Clock />} title="Working Hours" content="Mon - Fri: 9:00 AM - 6:00 PM EST" />
             </div>
             <div className="glass-panel p-6 rounded-2xl border border-[#00D4FF]/20 bg-[#00D4FF]/5">
@@ -79,7 +79,7 @@ export default function BookingSection() {
                 <MessageCircle className="w-5 h-5 text-[#00D4FF]" /> Need immediate assistance?
               </h4>
               <p className="text-gray-400 text-sm mb-4">Chat with us on WhatsApp for quick responses.</p>
-              <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/9136663411" target="_blank" rel="noopener noreferrer">
                 <button className="w-full py-3 rounded-xl bg-[#00D4FF] text-black font-bold flex items-center justify-center gap-2 hover:scale-[1.02] transition-transform">
                   <MessageCircle className="w-5 h-5" /> Chat on WhatsApp
                 </button>

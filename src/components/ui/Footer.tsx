@@ -87,13 +87,13 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-6">Socials</h4>
             <div className="flex gap-3">
               <SocialIcon icon={<Linkedin className="w-5 h-5" />} href="#" />
-              <SocialIcon icon={<Twitter className="w-5 h-5" />} href="#" />
-              <SocialIcon icon={<Instagram className="w-5 h-5" />} href="#" />
+  
+              <SocialIcon icon={<Instagram className="w-5 h-5" />} href="https://www.instagram.com/digi_ascend?igsh=NDc0d2V6OWJ4d3oz" />
               <SocialIcon icon={<Github className="w-5 h-5" />} href="#" />
             </div>
             <div className="mt-6">
               <a href="mailto:hello@ascend.agency" className="flex items-center gap-2 text-gray-400 hover:text-[#00D4FF] transition-colors group">
-                <Mail className="w-4 h-4 group-hover:animate-bounce" /> hello@ascend.agency
+                <Mail className="w-4 h-4 group-hover:animate-bounce" /> digiascend13@gmail.com
               </a>
             </div>
           </div>

@@ -58,7 +58,7 @@ export default function Hero() {
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
           
-          <a href="https://wa.me/1234567890" className="px-8 py-4 rounded-full border border-white/20 text-white font-semibold text-lg hover:bg-white/5 transition-colors backdrop-blur-sm flex items-center justify-center gap-2">
+          <a href="https://wa.me/9136663411" className="px-8 py-4 rounded-full border border-white/20 text-white font-semibold text-lg hover:bg-white/5 transition-colors backdrop-blur-sm flex items-center justify-center gap-2">
             <MessageCircle className="w-5 h-5 text-[#00D4FF]" />
             WhatsApp Us
           </a>
