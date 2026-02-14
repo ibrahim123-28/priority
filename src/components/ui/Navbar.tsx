@@ -16,7 +16,7 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Services", href: "/#services" },
-    { name: "Work", href: "/case-studies" },
+    //{ name: "Work", href: "/" },
     { name: "Process", href: "/#process" },
     { name: "Team", href: "/#team" },
   ];
@@ -29,7 +29,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="text-2xl font-heading font-bold text-white tracking-tighter">
-          ASCEND<span className="text-[#00D4FF]">.</span>
+          SURVO<span className="text-[#00D4FF]">.</span>
         </Link>
 
         {/* Desktop Navigation */}

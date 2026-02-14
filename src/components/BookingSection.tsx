@@ -59,7 +59,7 @@ export default function BookingSection() {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4 text-white">
-            Let's Start <span className="text-[#00D4FF]">Ascending</span>
+            Let's  <span className="text-[#00D4FF]">Begin</span>
           </h2>
           <p className="text-gray-400 text-lg">Claim your free consultation and let's map out your growth.</p>
         </div>

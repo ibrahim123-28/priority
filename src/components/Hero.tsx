@@ -65,46 +65,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Stats Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-          className="w-full max-w-5xl mx-auto glass-panel rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-around gap-8 md:gap-4 border border-white/10"
-        >
-          <div className="flex items-center gap-4">
-            <div className="p-3 rounded-xl bg-[#00D4FF]/10 text-[#00D4FF]">
-               <CheckCircle className="w-6 h-6" />
-            </div>
-            <div className="text-left">
-              <h3 className="font-bold text-2xl text-white">50+</h3>
-              <p className="text-sm text-gray-400 font-medium">Projects Delivered</p>
-            </div>
-          </div>
-
-          <div className="w-px h-12 bg-white/10 hidden md:block" />
-
-          <div className="flex items-center gap-4">
-            <div className="p-3 rounded-xl bg-[#00D4FF]/10 text-[#00D4FF]">
-               <BarChart3 className="w-6 h-6" />
-            </div>
-            <div className="text-left">
-              <h3 className="font-bold text-2xl text-white">300%</h3>
-              <p className="text-sm text-gray-400 font-medium">Avg. Lead Increase</p>
-            </div>
-          </div>
-
-          <div className="w-px h-12 bg-white/10 hidden md:block" />
-
-          <div className="flex items-center gap-4">
-            <div className="p-3 rounded-xl bg-[#00D4FF]/10 text-[#00D4FF]">
-               <Clock className="w-6 h-6" />
-            </div>
-            <div className="text-left">
-              <h3 className="font-bold text-2xl text-white">24/7</h3>
-              <p className="text-sm text-gray-400 font-medium">AI Automation</p>
-            </div>
-          </div>
-        </motion.div>
+        
       </div>
     </section>
   );

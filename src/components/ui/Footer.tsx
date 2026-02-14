@@ -12,7 +12,7 @@ export default function Footer() {
       {/* 1. MASSIVE WATERMARK (Texture) */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full text-center pointer-events-none select-none opacity-[0.03]">
         <h1 className="text-[15vw] md:text-[20vw] font-bold text-white leading-none tracking-tighter">
-          ASCEND
+          SURVO
         </h1>
       </div>
 
@@ -25,7 +25,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 gap-12 mb-20 items-center">
           <div>
             <Link href="/" className="text-4xl md:text-5xl font-heading font-bold text-white tracking-tighter mb-4 block">
-              ASCEND<span className="text-[#00D4FF]">.</span>
+              SURVO<span className="text-[#00D4FF]">.</span>
             </Link>
             <p className="text-gray-400 text-lg max-w-md leading-relaxed">
               We engineer digital dominance. From high-performance platforms to AI automation, we build the systems that scale your business.
@@ -102,10 +102,10 @@ export default function Footer() {
         {/* BOTTOM BAR */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 text-sm">
-            © {currentYear} ASCEND Agency. All rights reserved.
+            © {currentYear} SURVO Agency. All rights reserved.
           </p>
           <p className="text-gray-600 text-sm flex items-center gap-1 group cursor-default">
-            Made with <Heart className="w-3 h-3 text-red-500 fill-red-500 group-hover:scale-125 transition-transform" /> in Mumbai & Dubai.
+            Made with <Heart className="w-3 h-3 text-red-500 fill-red-500 group-hover:scale-125 transition-transform" /> in Mumbai.
           </p>
         </div>
       </div>
